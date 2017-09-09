@@ -16,13 +16,7 @@ def fast_count_segments(starts, ends, points):
             number -= 1
         else:
             cnt[i[2]] = number
-    return cnt
-def naive_count_segments(starts, ends, points):
-    cnt = [0] * len(points)
-    for i in range(len(points)):
-        for j in range(len(starts)):
-            if starts[j] <= points[i] <= ends[j]:
-                cnt[i] += 1
+            
     return cnt
 
 if __name__ == '__main__':
